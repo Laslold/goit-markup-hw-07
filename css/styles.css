@@ -716,6 +716,7 @@ padding-bottom: 16px;
 .portfolio-list .wrapper {
   font-size: 16px;
   margin-left: 24px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -724,7 +725,7 @@ padding-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin: 20px 0 0 0;
+  /* margin: 20px 0 0 0; */
 }
 
 .portfolio-list p {
