@@ -29,12 +29,12 @@
   transition: opacity 250ms $time-cube;
   opacity: 1;
   visibility: visible;
-}
 
-.modal__btn {
-  position: fixed;
-  display: flex;
-  align-items: center;
+
+&__btn {
+ 
+  @include flex_center;
+   position: fixed;
   justify-items: center;
   top: 8px;
   right: 8px;
@@ -52,17 +52,17 @@
   }
 }
 
-.modal__icon {
+&__icon {
   width: 30px;
   height: 30px;
   list-style: none;
   fill: currentColor;
 }
-
+}
 .modal-form {
-  display: flex;
+  @include flex_center;
   flex-direction: column;
-  align-items: center;
+  
   padding: 40px;
   font-weight: 400;
   font-size: 12px;
@@ -81,16 +81,15 @@
     letter-spacing: 0.03em;
     color: $title-text-color;
   }
-}
 
-.modal-form__fild {
+&__fild {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal-form__input {
+&__input {
   width: 448px;
   height: 40px;
   margin-top: 4px;
@@ -106,7 +105,7 @@
   }
 }
 
-.modal-form__icon {
+&__icon {
   position: absolute;
   display: inline-block;
   width: 18px;
@@ -122,7 +121,7 @@
   }
 }
 
-.modal-form__comment {
+&__comment {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -151,6 +150,7 @@
     }
   }
 }
+}
 
 .politic {
   display: inline-flex;
@@ -167,20 +167,19 @@
     color: $accent-color;
     text-underline-position: under;
   }
-}
 
-.politic__label {
-  display: flex;
-  align-items: center;
+
+&__label {
+  @include flex_center;
   cursor: pointer;
 }
 
-.politic__checkbox {
+&__checkbox {
   appearance: none;
   position: absolute;
 }
 
-.politic__icon {
+&__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -198,7 +197,7 @@
     border-color: $accent-color;
   }
 }
-
+}
 .form-button {
   display: inline-block;
   min-width: 200px;

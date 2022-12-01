@@ -1,19 +1,19 @@
 .client {
   margin-top: 94px;
-}
 
-.client__list {
+
+&__list {
   display: flex;
 }
 
-.client__item {
-  display: flex;
+&__item {
+  @include flex_center;
   justify-content: center;
-  align-items: center;
+ 
   margin: 0;
 }
 
-.client__link {
+&__link {
   display: inline-flex;
   align-items: center;
   height: 92px;
@@ -30,7 +30,7 @@
   }
 }
 
-.client__icon {
+&__icon {
   width: 170px;
   height: 60px;
   margin: 0;
@@ -38,7 +38,7 @@
   fill: currentColor;
   list-style: none;
 }
-
+}
 .client__item+.client__item {
   margin-left: 30px;
 }

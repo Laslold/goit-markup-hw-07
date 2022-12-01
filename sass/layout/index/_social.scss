@@ -1,17 +1,16 @@
 .social {
   display: flex;
   margin-bottom: 30px;
-}
 
-.social__list {
-  display: flex;
+
+&__list {
+  @include flex_center;
   width: 206px;
-  align-items: center;
+  
 }
 
-.social__link {
-  display: flex;
-  align-items: center;
+&__link {
+  @include flex_center;
   justify-content: center;
   width: 44px;
   height: 44px;
@@ -26,19 +25,15 @@
   }
 }
 
-.social__items+.social__items {
-  margin-left: 10px;
-}
 
-.social__icon {
+&__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.social__link--attach {
-  display: flex;
-  align-items: center;
+&__link--attach {
+  @include flex_center;
   justify-content: center;
   width: 44px;
   height: 44px;
@@ -51,4 +46,8 @@
   &:focus {
     background-color: $accent-color;
   }
+}
+}
+.social__items+.social__items {
+  margin-left: 10px;
 }

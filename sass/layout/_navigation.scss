@@ -1,6 +1,5 @@
 .main-nav {
-    display: flex;
-    align-items: center;
+  @include flex_center;
   }
   .main-nav__logo {
     font-family: "Raleway", sans-serif;
@@ -17,13 +16,10 @@
   .site-nav {
     display: flex;
     margin-left: 93px;
-  }
   
-  .site-nav__item + .site-nav__item {
-    margin-left: 50px;
-  }
+ 
   
-  .site-nav__link {
+  &__link {
     position: relative;
     padding: 32px 0 32px;
     font-weight: 500;
@@ -36,7 +32,7 @@
       color: $accent-color;
     }
   }
-  .site-nav__link.current {
+  &__link.current {
     color: $accent-color;
     &::after {
       position: absolute;
@@ -49,15 +45,17 @@
       background-color: $accent-color;
     }
   }
-  .address-nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+}
+  .site-nav__item + .site-nav__item {
+    margin-left: 50px;
   }
+  .address-nav {
+    @include flex_center;
+    margin-left: auto;
   
-  .address-nav__link {
-    display: flex;
-    align-items: center;
+  
+  &__link {
+    @include flex_center;
     padding: 32px 0 32px;
     font-weight: 500;
     font-size: 14px;
@@ -69,10 +67,8 @@
       color: $accent-color;
     }
   }
-  .address-nav__item + .address-nav__item {
-    margin-left: 50px;
-  }
-  .address-nav__mail {
+ 
+  &__mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
@@ -80,9 +76,13 @@
     fill: currentColor;
   }
   
-  .address-nav__phone {
+  &__phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
+  }
+  }
+   .address-nav__item + .address-nav__item {
+    margin-left: 50px;
   }

@@ -12,9 +12,9 @@
   line-height: 1.18;
   text-align: center;
   color: $primary-text-color;
-}
 
-.about-list__title {
+
+&__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -22,9 +22,8 @@
   text-align: center;
   color: $title-text-color;
 }
-.about-list__item {
-  display: flex;
-  align-items: center;
+&__item {
+@include flex_center;
   flex-direction: column;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -32,11 +31,11 @@
   background-color: $white-color;
 }
 
-.about-list__about-wrapper {
+&__about-wrapper {
   padding-top: 30px;
   padding-bottom: 16px;
 }
-
+}
 .about-list__item + .about-list__item {
   margin-left: 30px;
 }
