@@ -1,3 +1,5 @@
-.inner {
-  @include flex_center;
-}
+.page-header {
+  .container{
+  @include flex_center;}
+} 
+

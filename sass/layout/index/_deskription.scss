@@ -4,6 +4,20 @@
   text-align: center;
   background-color: $color-bg-footer;
 
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 
 &__title {
   box-sizing: content-box;
@@ -40,18 +54,4 @@
   }
 }
 }
-.overlay {
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
