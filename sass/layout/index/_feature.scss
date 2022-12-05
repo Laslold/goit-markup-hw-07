@@ -1,4 +1,7 @@
-.feature-list {
+.feature{
+  padding-top: 94px;
+
+&__list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
   font-size: 14px;
   line-height: 1.71;
   color: $primary-text-color;
+}
 
 &__title {
   margin: 30px 0 10px;
@@ -32,8 +36,8 @@
   width: 70px;
   height: 70px;
 }
-}
 
-.feature-list__item+.feature-list__item {
+
+&__item+ &__item {
   margin-left: 30px;
-}
+}}

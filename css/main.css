@@ -29,10 +29,6 @@ ul {
   padding-right: 15px;
 }
 
-.section {
-  margin-bottom: 94px;
-}
-
 .hide {
   position: absolute;
   width: 1px;
@@ -149,7 +145,6 @@ ul {
 
 .deskription {
   padding-top: 200px;
-  margin-bottom: 94px;
   text-align: center;
   background-color: #2f303a;
   height: 600px;
@@ -193,7 +188,10 @@ ul {
   background-color: #188ce8;
 }
 
-.feature-list {
+.feature {
+  padding-top: 94px;
+}
+.feature__list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -202,7 +200,7 @@ ul {
   line-height: 1.71;
   color: #757575;
 }
-.feature-list__title {
+.feature__title {
   margin: 30px 0 10px;
   font-weight: 700;
   font-size: 14px;
@@ -210,10 +208,10 @@ ul {
   color: #212121;
   text-transform: uppercase;
 }
-.feature-list__item {
+.feature__item {
   width: 270px;
 }
-.feature-list__wrapper {
+.feature__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,16 +219,18 @@ ul {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-.feature-list__icon {
+.feature__icon {
   width: 70px;
   height: 70px;
 }
-
-.feature-list__item + .feature-list__item {
+.feature__item + .feature__item {
   margin-left: 30px;
 }
 
 .work {
+  padding-top: 94px;
+}
+.work__list {
   display: flex;
 }
 .work__thumb {
@@ -252,7 +252,6 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
   text-transform: uppercase;
 }
-
 .work__item + .work__item {
   margin-left: 30px;
 }
@@ -263,8 +262,7 @@ ul {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
-
-.about-list {
+.about__list {
   display: flex;
   font-weight: 400;
   font-size: 16px;
@@ -272,7 +270,7 @@ ul {
   text-align: center;
   color: #757575;
 }
-.about-list__title {
+.about__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -280,7 +278,7 @@ ul {
   text-align: center;
   color: #212121;
 }
-.about-list__item {
+.about__item {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -288,23 +286,22 @@ ul {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-.about-list__about-wrapper {
+.about__wrapper {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
-
-.about-list__item + .about-list__item {
+.about__item + .about__item {
   margin-left: 30px;
 }
 
 .social {
   display: flex;
-  margin-bottom: 30px;
 }
 .social__list {
   display: flex;
   align-items: center;
   width: 206px;
+  margin-top: 16px;
 }
 .social__link {
   display: flex;
@@ -345,8 +342,8 @@ ul {
 }
 
 .client {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .client__list {
   display: flex;
@@ -378,7 +375,6 @@ ul {
   fill: currentColor;
   list-style: none;
 }
-
 .client__item + .client__item {
   margin-left: 30px;
 }

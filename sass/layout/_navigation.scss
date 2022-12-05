@@ -1,7 +1,7 @@
 .main-nav {
   @include flex_center;
-  }
-  .main-nav__logo {
+  
+  &__logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -12,7 +12,7 @@
       color: $accent-color;
     }
   }
-  
+  }
   .site-nav {
     display: flex;
     margin-left: 93px;
@@ -45,10 +45,10 @@
       background-color: $accent-color;
     }
   }
-}
-  .site-nav__item + .site-nav__item {
+
+  &__item + &__item {
     margin-left: 50px;
-  }
+  }}
   .address-nav {
     @include flex_center;
     margin-left: auto;
@@ -82,7 +82,7 @@
     margin-right: 10px;
     fill: currentColor;
   }
-  }
-   .address-nav__item + .address-nav__item {
+  
+ &__item + &__item {
     margin-left: 50px;
-  }
+  }}

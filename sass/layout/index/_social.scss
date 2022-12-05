@@ -1,11 +1,12 @@
 .social {
   display: flex;
-  margin-bottom: 30px;
+
 
 
 &__list {
   @include flex_center;
   width: 206px;
+  margin-top: 16px
   
 }
 
